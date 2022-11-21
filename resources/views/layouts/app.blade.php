@@ -16,13 +16,10 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
-    <!-- Styles -->
-    <link href="{{ asset('public/css/app.css') }}" rel="stylesheet">
+    @vite(['resources/js/app.js'])
 </head>
 <body>
     <div id="app">
-        <script src="{{ asset('public/js/app.js') }}">
-        </script>
     </div>
 </body>
 </html>

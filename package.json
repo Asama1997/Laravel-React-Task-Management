@@ -14,7 +14,7 @@
         "@babel/preset-react": "^7.0.0",
         "@popperjs/core": "^2.10.2",
         "axios": "^0.19",
-        "bootstrap": "^5.2.1",
+        "bootstrap": "^5.2.2",
         "cross-env": "^7.0",
         "jquery": "^3.2",
         "laravel-mix": "^5.0.1",
@@ -27,7 +27,7 @@
         "sass-loader": "^8.0.0"
     },
     "dependencies": {
-        "react-bootstrap": "^1.0.1",
+        "react-bootstrap": "^1.6.6",
         "react-router-dom": "^5.2.0"
     }
 }
