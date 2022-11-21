@@ -5,6 +5,7 @@ namespace App\Http\Controllers\API\Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Validator;
 
 use App\User;
 use App\repositories\AuthRepository;
@@ -28,7 +29,7 @@ class AuthAPIController extends Controller
     public function login(Request $request)
     {
         $formData = $request->all();
-        $validator = \Validator::make($formData, [
+        $validator = Validator::make($formData, [
             'email' => 'required',
             'password' => 'required',
         ], [
@@ -64,7 +65,7 @@ class AuthAPIController extends Controller
     public function register(Request $request)
     {
         $formData = $request->all();
-        $validator = \Validator::make($formData, [
+        $validator = Validator::make($formData, [
             'name' => 'required|min:3|max:30',
             'email' => 'required|email|max:100|unique:users',
             'password' => 'required|confirmed|min:8',

@@ -3,25 +3,18 @@ import React from "react";
 function About() {
   return (
     <>
-      <h2>About Us</h2>
+      <h2>About</h2>
       <div>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-          placeat sit omnis laboriosam repellendus corrupti, excepturi ad
-          impedit nemo harum ullam illo, ipsa eveniet dolores maxime
-          consequuntur iure blanditiis aspernatur!
+          Webapp designed to make a control of the task and jobs that are pending in our agenda
         </p>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-          placeat sit omnis laboriosam repellendus corrupti, excepturi ad
-          impedit nemo harum ullam illo, ipsa eveniet dolores maxime
-          consequuntur iure blanditiis aspernatur!
+          Original idea from the app RPGManager Android
         </p>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-          placeat sit omnis laboriosam repellendus corrupti, excepturi ad
-          impedit nemo harum ullam illo, ipsa eveniet dolores maxime
-          consequuntur iure blanditiis aspernatur!
+          Antonio Santillan Martinez 20150386
+          Instituto Tecnologico de Aguascalientes
+          Ing. TICs
         </p>
       </div>
     </>
