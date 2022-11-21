@@ -24,7 +24,7 @@ export const checkIfAuthenticated = () => {
  */
 export const registerUser = async (data) => {
   return await Axios.post(
-    "http://localhost:8200/myTask/api/auth/register",
+    "http://localhost/Laravel-React-Task-Manager/public/myTask/api/auth/register",
     data
   ).then((res) => {
     return res.data;
@@ -38,7 +38,7 @@ export const registerUser = async (data) => {
  */
 export const loginUser = async (data) => {
   return await Axios.post(
-    "http://localhost:8200/myTask/api/auth/login",
+    "http://localhost/Laravel-React-Task-Manager/public/myTask/api/auth/login",
     data
   ).then((res) => {
     return res.data;

@@ -59,7 +59,6 @@ class Register extends React.Component {
           errors: {},
         });
         localStorage.setItem("loginData", JSON.stringify(response));
-        // history.push(`${PUBLIC_URL}projects`);
       } else {
         console.log("response.errors", response.errors);
         this.setState({

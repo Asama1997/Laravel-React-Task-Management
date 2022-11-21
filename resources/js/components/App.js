@@ -71,8 +71,6 @@ class App extends Component {
                   component={ProjectList}
                 />
 
-                {/* Private Authenticated Routes */}
-
                 <Route
                   path={`${PUBLIC_URL}register`}
                   exact={true}
@@ -99,5 +97,7 @@ class App extends Component {
 export default App;
 
 if (document.getElementById("app")) {
-  ReactDOM.render(<App />, document.getElementById("app"));
+  ReactDOM.render(
+  <App/>, 
+  document.getElementById("app"));
 }

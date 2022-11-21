@@ -36,7 +36,7 @@ class ProjectView extends React.Component {
   getProjectDetails = () => {
     this.setState({ isLoading: true });
     Axios.get(
-      `http://localhost:8200/myTask/api/projects/${this.props.match.params.id}`
+      `http://localhost/Laravel-React-Task-Manager/public/myTask/api/projects/${this.props.match.params.id}`
     ).then((res) => {
       this.setState({
         taskList: res.data.data.tasks,

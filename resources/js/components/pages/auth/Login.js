@@ -14,7 +14,9 @@ class Login extends React.Component {
     validated: false,
   };
 
-  componentDidMount() {}
+  componentDidMount() {
+    
+  }
 
   changeInput = (e) => {
     this.setState({
@@ -23,10 +25,10 @@ class Login extends React.Component {
   };
 
   submitForm = async (e) => {
-    const form = event.currentTarget;
+    const form = currentTarget;
     if (form.checkValidity() === false) {
-      event.preventDefault();
-      event.stopPropagation();
+      preventDefault();
+      stopPropagation();
     }
 
     this.setState({
@@ -40,7 +42,7 @@ class Login extends React.Component {
       password: this.state.password,
     };
     if (form.checkValidity() !== false) {
-      event.preventDefault();
+      preventDefault();
       this.setState({ isLoading: true });
       const response = await loginUser(postBody);
       console.log("response register", response);

@@ -48,6 +48,5 @@ class Counter extends Component {
 
 export default Counter;
 
-if (document.getElementById("counter")) {
+
   ReactDOM.render(<Counter />, document.getElementById("counter"));
-}

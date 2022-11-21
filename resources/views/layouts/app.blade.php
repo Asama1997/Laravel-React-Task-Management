@@ -10,16 +10,15 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
-    
-
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
-    @vite(['resources/js/app.js'])
+    <link href="{{ asset('public/css/app.css') }}" rel="stylesheet">
 </head>
 <body>
+    Hola estas en la pagina principal. Aqui se deberia de ver el componente de react ;n;
     <div id="app">
     </div>
+<script src="{{ asset('resources/js/components/App.js') }}"></script>
 </body>
 </html>

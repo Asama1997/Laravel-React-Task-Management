@@ -22,15 +22,15 @@
         "laravel-vite-plugin": "^0.6.0",
         "lodash": "^4.17.13",
         "popper.js": "^1.12",
-        "react": "^17.0.2",
-        "react-dom": "^17.0.2",
         "resolve-url-loader": "^5.0.0",
         "sass": "^1.32.11",
         "sass-loader": "^8.0.0",
         "vite": "^3.0.0"
     },
     "dependencies": {
+        "react": "^17.0.2",
         "react-bootstrap": "^1.6.6",
+        "react-dom": "^17.0.2",
         "react-router-dom": "^5.2.0",
         "vite-plugin-babel": "^1.1.2",
         "vue-template-compiler": "^2.7.14"

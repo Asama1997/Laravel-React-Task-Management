@@ -18,7 +18,7 @@ class TaskList extends React.Component {
     if (response.success) {
       this.props.onEditTask();
     } else {
-      alert("Sorry !! Something went wrong !!");
+      alert("Something went wrong !!");
     }
   };
 
