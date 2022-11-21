@@ -10,5 +10,19 @@ export default defineConfig({
             ],
             refresh: true,
         }),
+        babel({
+            babelConfig: {
+                babelrc: true,
+                configFile: false,
+                plugin: ['@babel/plugin-proposal-decorators'],
+                
+                // uses the jsx loader for .jsx files
+                loader: path => {
+                  if (extname(path) === '.jsx') {
+                    return 'jsx';
+                  }
+                },
+            }
+        }),
     ],
 });
